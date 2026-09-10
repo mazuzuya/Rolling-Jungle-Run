@@ -1,0 +1,29 @@
+{
+  "image": "/generated-assets/ledge_01-transparent.webp",
+  "grid": {
+    "cols": 1,
+    "rows": 1,
+    "frameWidth": 1245,
+    "frameHeight": 355
+  },
+  "frames": [
+    {
+      "name": "ledge_01_rainforest",
+      "source": {
+        "x": 0,
+        "y": 0,
+        "w": 1245,
+        "h": 355
+      },
+      "content": {
+        "x": 0,
+        "y": 0,
+        "w": 1245,
+        "h": 355
+      },
+      "anchor": null,
+      "surfaceEdge": "top",
+      "surfaceY": 89
+    }
+  ]
+}

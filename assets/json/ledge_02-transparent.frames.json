@@ -1,0 +1,29 @@
+{
+  "image": "/generated-assets/ledge_02-transparent.webp",
+  "grid": {
+    "cols": 1,
+    "rows": 1,
+    "frameWidth": 1239,
+    "frameHeight": 507
+  },
+  "frames": [
+    {
+      "name": "ledge_02_riverbank",
+      "source": {
+        "x": 0,
+        "y": 0,
+        "w": 1239,
+        "h": 507
+      },
+      "content": {
+        "x": 0,
+        "y": 0,
+        "w": 1239,
+        "h": 507
+      },
+      "anchor": null,
+      "surfaceEdge": "top",
+      "surfaceY": 167
+    }
+  ]
+}

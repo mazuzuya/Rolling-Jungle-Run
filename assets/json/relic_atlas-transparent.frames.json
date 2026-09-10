@@ -1,0 +1,201 @@
+{
+  "image": "/generated-assets/relic_atlas-transparent.webp",
+  "grid": {
+    "cols": 5,
+    "rows": 2,
+    "frameWidth": 320,
+    "frameHeight": 320
+  },
+  "frames": [
+    {
+      "name": "rain_seed",
+      "source": {
+        "x": 56,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 48,
+        "y": 20,
+        "w": 305,
+        "h": 365
+      },
+      "anchor": {
+        "x": 201,
+        "y": 384
+      }
+    },
+    {
+      "name": "river_pearl",
+      "source": {
+        "x": 440,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 434,
+        "y": 88,
+        "w": 326,
+        "h": 266
+      },
+      "anchor": {
+        "x": 597,
+        "y": 353
+      }
+    },
+    {
+      "name": "camp_compass",
+      "source": {
+        "x": 824,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 847,
+        "y": 17,
+        "w": 274,
+        "h": 348
+      },
+      "anchor": {
+        "x": 984,
+        "y": 364
+      }
+    },
+    {
+      "name": "freedom_key",
+      "source": {
+        "x": 1208,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 1204,
+        "y": 28,
+        "w": 331,
+        "h": 346
+      },
+      "anchor": {
+        "x": 1370,
+        "y": 373
+      }
+    },
+    {
+      "name": "crystal_heart",
+      "source": {
+        "x": 1592,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 1630,
+        "y": 67,
+        "w": 295,
+        "h": 290
+      },
+      "anchor": {
+        "x": 1778,
+        "y": 356
+      }
+    },
+    {
+      "name": "sun_disk",
+      "source": {
+        "x": 56,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 44,
+        "y": 445,
+        "w": 317,
+        "h": 314
+      },
+      "anchor": {
+        "x": 203,
+        "y": 758
+      }
+    },
+    {
+      "name": "savannah_feather",
+      "source": {
+        "x": 440,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 439,
+        "y": 417,
+        "w": 323,
+        "h": 379
+      },
+      "anchor": {
+        "x": 601,
+        "y": 795
+      }
+    },
+    {
+      "name": "bridge_charm",
+      "source": {
+        "x": 824,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 883,
+        "y": 415,
+        "w": 204,
+        "h": 384
+      },
+      "anchor": {
+        "x": 985,
+        "y": 798
+      }
+    },
+    {
+      "name": "moon_berry",
+      "source": {
+        "x": 1208,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 1203,
+        "y": 436,
+        "w": 353,
+        "h": 314
+      },
+      "anchor": {
+        "x": 1380,
+        "y": 749
+      }
+    },
+    {
+      "name": "core_seed",
+      "source": {
+        "x": 1592,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 1632,
+        "y": 416,
+        "w": 287,
+        "h": 377
+      },
+      "anchor": {
+        "x": 1776,
+        "y": 792
+      }
+    }
+  ]
+}

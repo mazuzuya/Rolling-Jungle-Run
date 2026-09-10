@@ -1,0 +1,29 @@
+{
+  "image": "/generated-assets/ledge_03-transparent.webp",
+  "grid": {
+    "cols": 1,
+    "rows": 1,
+    "frameWidth": 1273,
+    "frameHeight": 573
+  },
+  "frames": [
+    {
+      "name": "ledge_03_camp",
+      "source": {
+        "x": 0,
+        "y": 0,
+        "w": 1273,
+        "h": 573
+      },
+      "content": {
+        "x": 0,
+        "y": 0,
+        "w": 1273,
+        "h": 573
+      },
+      "anchor": null,
+      "surfaceEdge": "top",
+      "surfaceY": 119
+    }
+  ]
+}

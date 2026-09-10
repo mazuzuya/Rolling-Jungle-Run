@@ -1,0 +1,201 @@
+{
+  "image": "/generated-assets/landmark_atlas-transparent.webp",
+  "grid": {
+    "cols": 5,
+    "rows": 2,
+    "frameWidth": 320,
+    "frameHeight": 320
+  },
+  "frames": [
+    {
+      "name": "rainforest_tree_shrine",
+      "source": {
+        "x": 56,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 15,
+        "y": 14,
+        "w": 376,
+        "h": 356
+      },
+      "anchor": {
+        "x": 203,
+        "y": 369
+      }
+    },
+    {
+      "name": "mangrove_totem",
+      "source": {
+        "x": 440,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 417,
+        "y": 22,
+        "w": 367,
+        "h": 349
+      },
+      "anchor": {
+        "x": 601,
+        "y": 370
+      }
+    },
+    {
+      "name": "camp_watchtower",
+      "source": {
+        "x": 824,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 810,
+        "y": 13,
+        "w": 351,
+        "h": 358
+      },
+      "anchor": {
+        "x": 986,
+        "y": 370
+      }
+    },
+    {
+      "name": "poacher_blind",
+      "source": {
+        "x": 1208,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 1189,
+        "y": 69,
+        "w": 361,
+        "h": 293
+      },
+      "anchor": {
+        "x": 1370,
+        "y": 361
+      }
+    },
+    {
+      "name": "crystal_waterfall",
+      "source": {
+        "x": 1592,
+        "y": 56,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 1577,
+        "y": 16,
+        "w": 374,
+        "h": 355
+      },
+      "anchor": {
+        "x": 1764,
+        "y": 370
+      }
+    },
+    {
+      "name": "ruin_observatory",
+      "source": {
+        "x": 56,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 15,
+        "y": 424,
+        "w": 375,
+        "h": 358
+      },
+      "anchor": {
+        "x": 203,
+        "y": 781
+      }
+    },
+    {
+      "name": "termite_cathedral",
+      "source": {
+        "x": 440,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 417,
+        "y": 395,
+        "w": 368,
+        "h": 389
+      },
+      "anchor": {
+        "x": 601,
+        "y": 783
+      }
+    },
+    {
+      "name": "cliff_shrine",
+      "source": {
+        "x": 824,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 849,
+        "y": 395,
+        "w": 301,
+        "h": 388
+      },
+      "anchor": {
+        "x": 1000,
+        "y": 782
+      }
+    },
+    {
+      "name": "moon_gate",
+      "source": {
+        "x": 1208,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 1190,
+        "y": 418,
+        "w": 361,
+        "h": 362
+      },
+      "anchor": {
+        "x": 1371,
+        "y": 779
+      }
+    },
+    {
+      "name": "core_world_root",
+      "source": {
+        "x": 1592,
+        "y": 440,
+        "w": 320,
+        "h": 320
+      },
+      "content": {
+        "x": 1577,
+        "y": 395,
+        "w": 373,
+        "h": 388
+      },
+      "anchor": {
+        "x": 1764,
+        "y": 782
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "image": "/generated-assets/ledge_04-transparent.webp",
+  "grid": {
+    "cols": 1,
+    "rows": 1,
+    "frameWidth": 1230,
+    "frameHeight": 569
+  },
+  "frames": [
+    {
+      "name": "ledge_04_poacher",
+      "source": {
+        "x": 0,
+        "y": 0,
+        "w": 1230,
+        "h": 569
+      },
+      "content": {
+        "x": 0,
+        "y": 0,
+        "w": 1230,
+        "h": 569
+      },
+      "anchor": null,
+      "surfaceEdge": "top",
+      "surfaceY": 193
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "image": "/generated-assets/platform_04-transparent.webp",
+  "grid": {
+    "cols": 3,
+    "rows": 1,
+    "frameWidth": 224,
+    "frameHeight": 448
+  },
+  "frames": [
+    {
+      "name": "left",
+      "source": {
+        "x": 64,
+        "y": 64,
+        "w": 224,
+        "h": 448
+      },
+      "content": null,
+      "anchor": null,
+      "empty": true,
+      "connectsTo": [
+        "right"
+      ]
+    },
+    {
+      "name": "center",
+      "source": {
+        "x": 288,
+        "y": 64,
+        "w": 672,
+        "h": 448
+      },
+      "content": {
+        "x": 25,
+        "y": 126,
+        "w": 1198,
+        "h": 311
+      },
+      "anchor": {
+        "x": 624,
+        "y": 436
+      },
+      "surfaceEdge": "top",
+      "surfaceY": 192,
+      "connectsTo": [
+        "left",
+        "right"
+      ]
+    },
+    {
+      "name": "right",
+      "source": {
+        "x": 960,
+        "y": 64,
+        "w": 224,
+        "h": 448
+      },
+      "content": {
+        "x": 1001,
+        "y": 355,
+        "w": 5,
+        "h": 26
+      },
+      "anchor": {
+        "x": 1004,
+        "y": 380
+      },
+      "surfaceEdge": "top",
+      "surfaceY": 355,
+      "connectsTo": [
+        "left"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "image": "/generated-assets/ledge_07-transparent.webp",
+  "grid": {
+    "cols": 1,
+    "rows": 1,
+    "frameWidth": 1242,
+    "frameHeight": 326
+  },
+  "frames": [
+    {
+      "name": "ledge_07_savannah",
+      "source": {
+        "x": 0,
+        "y": 0,
+        "w": 1242,
+        "h": 326
+      },
+      "content": {
+        "x": 0,
+        "y": 0,
+        "w": 1242,
+        "h": 326
+      },
+      "anchor": null,
+      "surfaceEdge": "top",
+      "surfaceY": 37
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "image": "/generated-assets/ledge_06-transparent.webp",
+  "grid": {
+    "cols": 1,
+    "rows": 1,
+    "frameWidth": 1222,
+    "frameHeight": 438
+  },
+  "frames": [
+    {
+      "name": "ledge_06_ruins",
+      "source": {
+        "x": 0,
+        "y": 0,
+        "w": 1222,
+        "h": 438
+      },
+      "content": {
+        "x": 0,
+        "y": 0,
+        "w": 1222,
+        "h": 438
+      },
+      "anchor": null,
+      "surfaceEdge": "top",
+      "surfaceY": 44
+    }
+  ]
+}

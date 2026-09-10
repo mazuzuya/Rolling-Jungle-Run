@@ -1,0 +1,29 @@
+{
+  "image": "/generated-assets/ledge_05-transparent.webp",
+  "grid": {
+    "cols": 1,
+    "rows": 1,
+    "frameWidth": 1243,
+    "frameHeight": 227
+  },
+  "frames": [
+    {
+      "name": "ledge_05_cave",
+      "source": {
+        "x": 0,
+        "y": 0,
+        "w": 1243,
+        "h": 227
+      },
+      "content": {
+        "x": 0,
+        "y": 0,
+        "w": 1243,
+        "h": 227
+      },
+      "anchor": null,
+      "surfaceEdge": "top",
+      "surfaceY": 9
+    }
+  ]
+}

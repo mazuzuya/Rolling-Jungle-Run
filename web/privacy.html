@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kebijakan Privasi Rolling Jungle Run oleh CV Cahaya Asia Bersama.">
+  <meta name="theme-color" content="#101c1a">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23d8ee78'/%3E%3Ccircle cx='32' cy='32' r='17' fill='%23101c1a'/%3E%3Ccircle cx='25' cy='27' r='3' fill='%23d8ee78'/%3E%3Ccircle cx='39' cy='27' r='3' fill='%23d8ee78'/%3E%3Cpath d='M24 39c5 5 11 5 16 0' fill='none' stroke='%23d8ee78' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+  <title>Kebijakan Privasi | Rolling Jungle Run</title>
+  <style>
+    :root {
+      --ink: #102622;
+      --ink-soft: #1a3832;
+      --paper: #fff7dc;
+      --paper-soft: #f8e9b7;
+      --text: #f5f7ed;
+      --muted: #afbeb0;
+      --lime: #d8ee78;
+      --orange: #ff9a68;
+      --line: rgba(216, 238, 120, .18);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; color: var(--text); background: var(--ink); font-family: Arial, sans-serif; line-height: 1.7; }
+    a { color: inherit; }
+    .shell { width: min(100% - 42px, 1080px); margin: auto; }
+
+    header { border-bottom: 1px solid var(--line); }
+    .topbar { display: flex; align-items: center; justify-content: space-between; min-height: 80px; }
+    .brand { display: flex; align-items: center; gap: 11px; color: var(--text); font-size: 13px; font-weight: 800; letter-spacing: .04em; text-decoration: none; }
+    .brand-mark { display: grid; place-items: center; width: 31px; height: 31px; overflow: hidden; color: var(--ink); background: var(--lime); border-radius: 9px; font-size: 12px; }
+    .brand-mark img { width: 100%; height: 100%; object-fit: cover; }
+    .back { color: var(--muted); font: 11px monospace; text-decoration: none; text-transform: uppercase; letter-spacing: .08em; }
+    .back:hover { color: var(--lime); }
+
+    .hero { position: relative; padding: 82px 0 90px; overflow: hidden; background: var(--ink); }
+    .hero:after { position: absolute; right: -130px; bottom: -240px; width: 500px; height: 500px; border: 1px solid var(--line); border-radius: 50%; box-shadow: 0 0 0 48px rgba(216, 238, 120, .03), 0 0 0 96px rgba(216, 238, 120, .03); content: ''; }
+    .hero-layout { position: relative; z-index: 1; display: grid; grid-template-columns: 1fr 1.12fr; gap: 70px; align-items: center; }
+    .eyebrow { position: relative; z-index: 1; color: var(--lime); font: 11px monospace; letter-spacing: .16em; text-transform: uppercase; }
+    h1 { position: relative; z-index: 1; max-width: 770px; margin: 18px 0 20px; font-size: clamp(48px, 7vw, 82px); line-height: .96; letter-spacing: -.075em; }
+    h1 span { color: var(--lime); }
+    .lead { position: relative; z-index: 1; max-width: 590px; margin: 0; color: var(--muted); font-size: 16px; }
+    .updated { position: relative; z-index: 1; display: inline-block; margin-top: 28px; padding: 7px 10px; color: var(--ink); background: var(--lime); font: 10px monospace; letter-spacing: .08em; text-transform: uppercase; }
+    .feature-frame { position: relative; padding: 13px; border: 2px solid var(--lime); border-radius: 28px; background: var(--lime); transform: rotate(2deg); box-shadow: 14px 14px 0 var(--orange); }
+    .feature-image { display: block; width: 100%; aspect-ratio: 2 / 1; object-fit: cover; border-radius: 17px; }
+    .logo-sticker { position: absolute; right: -25px; bottom: -35px; width: 112px; height: 112px; padding: 8px; border: 6px solid var(--paper); border-radius: 50%; background: var(--orange); transform: rotate(-12deg); }
+    .feature-tag { position: absolute; top: -20px; left: -26px; padding: 10px 14px; color: var(--ink); border: 2px solid var(--ink); border-radius: 999px; background: var(--orange); font: 800 11px monospace; transform: rotate(-8deg); }
+
+    main { padding: 85px 0 110px; color: var(--ink); background: var(--paper); }
+    .content { display: grid; grid-template-columns: 230px minmax(0, 690px); gap: 75px; align-items: start; }
+    .toc { position: sticky; top: 25px; }
+    .toc-label { margin-bottom: 17px; color: #5c6b5b; font: 11px monospace; letter-spacing: .1em; text-transform: uppercase; }
+    .toc a { display: block; padding: 7px 0; color: #667363; font-size: 12px; text-decoration: none; border-bottom: 1px solid rgba(16, 28, 26, .12); }
+    .toc a:hover { color: var(--ink); }
+    .article { min-width: 0; }
+    .principle { display: grid; grid-template-columns: 1fr 2fr; gap: 30px; margin-bottom: 72px; padding: 27px 30px 32px; border: 2px solid var(--ink); border-radius: 22px; background: var(--paper-soft); transform: rotate(-1deg); }
+    .principle strong { font-size: 19px; letter-spacing: -.04em; }
+    .principle p { margin: 0; color: #526052; font-size: 15px; }
+    .policy-item { display: grid; grid-template-columns: 55px minmax(0, 1fr); gap: 22px; margin-bottom: 22px; padding: 25px 24px 27px; border: 2px solid rgba(16, 38, 34, .14); border-radius: 20px; background: rgba(255, 255, 255, .38); }
+    .number { display: grid; place-items: center; width: 38px; height: 38px; color: var(--ink); background: var(--lime); border: 2px solid var(--ink); border-radius: 50%; font: 13px monospace; }
+    h2 { margin: 3px 0 11px; font-size: 25px; line-height: 1.1; letter-spacing: -.045em; }
+    .policy-item p { margin: 0; color: #526052; font-size: 15px; }
+    .policy-item ul { margin: 15px 0 0; padding-left: 19px; color: #526052; font-size: 15px; }
+    .policy-item li { padding: 3px 0; }
+    .contact-card { display: flex; justify-content: space-between; align-items: end; gap: 30px; margin-top: 55px; padding: 32px; color: var(--text); border: 3px solid var(--ink); border-radius: 24px; background: var(--ink); box-shadow: 9px 9px 0 var(--orange); }
+    .contact-card .eyebrow { color: var(--orange); }
+    .contact-card h2 { margin: 13px 0 8px; color: var(--text); }
+    .contact-card p { margin: 0; color: var(--muted); font-size: 14px; }
+    .email { display: inline-block; padding: 13px 15px; color: var(--ink); background: var(--lime); font-size: 13px; font-weight: 800; text-decoration: none; white-space: nowrap; }
+    .email:hover { background: #e8ff93; }
+
+    footer { padding: 27px 0; color: var(--muted); background: var(--ink); font-size: 11px; }
+    .footer-inner { display: flex; justify-content: space-between; gap: 20px; }
+
+    @media (max-width: 760px) {
+      .shell { width: min(100% - 32px, 1080px); }
+      .topbar { min-height: 68px; }
+      .brand { max-width: 230px; font-size: 11px; }
+      .hero { padding: 65px 0 80px; }
+      .hero-layout { display: block; }
+      .feature-frame { margin: 47px 12px 10px 0; }
+      .logo-sticker { right: -10px; bottom: -30px; width: 88px; height: 88px; }
+      .feature-tag { left: -10px; }
+      main { padding: 60px 0 75px; }
+      .content { display: block; }
+      .toc { position: static; display: flex; gap: 8px; overflow-x: auto; margin-bottom: 50px; padding-bottom: 9px; }
+      .toc-label { display: none; }
+      .toc a { flex: 0 0 auto; padding: 7px 10px; border: 1px solid rgba(16, 28, 26, .17); font-size: 10px; }
+      .principle { display: block; margin-bottom: 35px; padding: 22px; }
+      .principle strong { display: block; margin-bottom: 12px; }
+      .policy-item { grid-template-columns: 40px minmax(0, 1fr); gap: 14px; margin-bottom: 14px; padding: 20px 16px; }
+      .number { width: 32px; height: 32px; font-size: 11px; }
+      h2 { font-size: 22px; }
+      .policy-item p, .policy-item ul { font-size: 14px; }
+      .contact-card { display: block; margin-top: 55px; padding: 25px; }
+      .email { margin-top: 24px; font-size: 11px; }
+      .footer-inner { display: block; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="topbar shell">
+      <a class="brand" href="index.html"><span class="brand-mark"><img src="assets/images/logo.png" alt=""></span> ROLLING JUNGLE RUN</a>
+      <a class="back" href="index.html">Kembali ke game ↗</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-layout shell">
+      <div>
+        <div class="eyebrow">Privacy / Rolling Jungle Run</div>
+        <h1>Kebijakan<br><span>Privasi.</span></h1>
+        <p class="lead">Kami percaya game yang seru tidak harus mengorbankan privasi. Berikut penjelasan singkat dan jujur tentang data di Rolling Jungle Run.</p>
+        <div class="updated">Terakhir diperbarui / 10 September 2026</div>
+      </div>
+      <div class="feature-frame"><span class="feature-tag">100% OFFLINE FUN</span><img class="feature-image" src="assets/images/feature.png" alt="Dunia petualangan Rolling Jungle Run"><img class="logo-sticker" src="assets/images/logo.png" alt="Logo Rolling Jungle Run"></div>
+    </div>
+  </section>
+
+  <main>
+    <div class="content shell">
+      <aside class="toc" aria-label="Daftar isi">
+        <div class="toc-label">Daftar isi</div>
+        <a href="#prinsip">Komitmen kami</a>
+        <a href="#data">Tanpa pelacakan</a>
+        <a href="#lokal">Penyimpanan lokal</a>
+        <a href="#kendali">Kendali pemain</a>
+        <a href="#kontak">Kontak</a>
+      </aside>
+
+      <article class="article">
+        <div class="principle" id="prinsip">
+          <strong>Komitmen Privasi Kami</strong>
+          <p>Rolling Jungle Run dibuat untuk dimainkan dengan tenang. CV Cahaya Asia Bersama tidak meminta, mengambil, atau memindahkan informasi pribadi pemain. Fokus kami hanya menghadirkan pengalaman bermain yang ringan dan menyenangkan.</p>
+        </div>
+
+        <section class="policy-item" id="data">
+          <div class="number">01</div>
+          <div><h2>Game Tanpa Profil dan Pelacakan</h2><p>Anda dapat langsung masuk ke permainan tanpa membuat akun atau mengisi data diri. Tidak ada formulir, sistem login, iklan, analytics, GPS, maupun alat pemantau aktivitas yang disisipkan ke dalam game.</p></div>
+        </section>
+
+        <section class="policy-item" id="lokal">
+          <div class="number">02</div>
+          <div><h2>Progres Berhenti di Perangkat</h2><p>Skor, level, pilihan audio, dan pengaturan permainan disimpan secara lokal agar game dapat mengingat kemajuan Anda. Informasi tersebut tidak dikirim ke server, tidak masuk ke cloud, dan tidak dapat kami lihat.</p></div>
+        </section>
+
+        <section class="policy-item" id="kendali">
+          <div class="number">03</div>
+          <div><h2>Anda Memegang Kendali</h2><p>Semua data permainan berada di tangan Anda. Jika ingin menghapusnya, buka Pengaturan → Aplikasi → Rolling Jungle Run → Bersihkan Data / Cache. Menghapus aplikasi juga akan menghilangkan seluruh data lokal yang tersimpan.</p></div>
+        </section>
+
+        <section class="contact-card" id="kontak">
+          <div><div class="eyebrow">06 / Hubungi kami</div><h2>Kirim Pesan ke Kami</h2><p>Ada keraguan, masukan, atau sekadar ingin ngobrol? Jangan sungkan.</p></div>
+          <a class="email" href="mailto:cahayaasia@cahaya.id">cahayaasia@cahaya.id ↗</a>
+        </section>
+        <p style="margin: 25px 0 0; color: #667363; font-size: 13px;">CV CAHAYA ASIA BERSAMA</p>
+      </article>
+    </div>
+  </main>
+
+  <footer><div class="footer-inner shell"><span>© 2026 Rolling Jungle Run</span><span>CV Cahaya Asia Bersama</span></div></footer>
+</body>
+</html>

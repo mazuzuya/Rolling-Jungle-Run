@@ -1,0 +1,29 @@
+{
+  "image": "/generated-assets/ledge_10-transparent.webp",
+  "grid": {
+    "cols": 1,
+    "rows": 1,
+    "frameWidth": 1238,
+    "frameHeight": 391
+  },
+  "frames": [
+    {
+      "name": "ledge_10_core",
+      "source": {
+        "x": 0,
+        "y": 0,
+        "w": 1238,
+        "h": 391
+      },
+      "content": {
+        "x": 0,
+        "y": 0,
+        "w": 1238,
+        "h": 391
+      },
+      "anchor": null,
+      "surfaceEdge": "top",
+      "surfaceY": 81
+    }
+  ]
+}

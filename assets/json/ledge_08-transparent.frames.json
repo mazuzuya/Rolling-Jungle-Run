@@ -1,0 +1,29 @@
+{
+  "image": "/generated-assets/ledge_08-transparent.webp",
+  "grid": {
+    "cols": 1,
+    "rows": 1,
+    "frameWidth": 1260,
+    "frameHeight": 439
+  },
+  "frames": [
+    {
+      "name": "ledge_08_bridge",
+      "source": {
+        "x": 0,
+        "y": 0,
+        "w": 1260,
+        "h": 439
+      },
+      "content": {
+        "x": 0,
+        "y": 0,
+        "w": 1260,
+        "h": 439
+      },
+      "anchor": null,
+      "surfaceEdge": "top",
+      "surfaceY": 119
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="CV Cahaya Asia Bersama - partner teknologi untuk pengembangan website dan aplikasi mobile yang berdampak.">
+  <meta name="theme-color" content="#0b0f14">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23c7f36b'/%3E%3Ctext x='32' y='40' text-anchor='middle' font-family='Arial,sans-serif' font-size='22' font-weight='800' fill='%230b0f14'%3ECA%3C/text%3E%3C/svg%3E">
+  <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23c7f36b'/%3E%3Ctext x='32' y='40' text-anchor='middle' font-family='Arial,sans-serif' font-size='22' font-weight='800' fill='%230b0f14'%3ECA%3C/text%3E%3C/svg%3E">
+  <title>CV Cahaya Asia Bersama | Digital Product Studio</title>
+  <style>
+    :root {
+      --ink: #0b0f14;
+      --surface: #11171e;
+      --surface-2: #18212a;
+      --text: #f1f4ef;
+      --muted: #a0abb2;
+      --line: rgba(241, 244, 239, .14);
+      --lime: #c7f36b;
+      --orange: #ff835c;
+      --max: 1160px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--text);
+      background: var(--ink);
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    a { color: inherit; text-decoration: none; }
+    .container { width: min(calc(100% - 48px), var(--max)); margin: 0 auto; }
+    .eyebrow { color: var(--lime); font: 500 11px monospace; letter-spacing: .16em; text-transform: uppercase; }
+    .button {
+      display: inline-flex; align-items: center; justify-content: center; gap: 14px;
+      min-height: 50px; padding: 0 21px; border: 1px solid var(--lime);
+      color: var(--ink); background: var(--lime); font-size: 13px; font-weight: 800;
+      transition: transform .2s ease, background .2s ease;
+    }
+    .button:hover { transform: translateY(-3px); background: #dcff8b; }
+    .button.ghost { color: var(--text); background: transparent; border-color: var(--line); }
+    .button.ghost:hover { border-color: var(--lime); background: rgba(199,243,107,.08); }
+    .button span { font-size: 18px; line-height: 0; }
+
+    header { position: absolute; z-index: 5; top: 0; left: 0; width: 100%; }
+    .nav { display: flex; align-items: center; justify-content: space-between; height: 86px; border-bottom: 1px solid var(--line); }
+    .brand { display: flex; align-items: center; gap: 12px; font-size: 13px; font-weight: 800; letter-spacing: .03em; }
+    .brand-mark { display: grid; place-items: center; width: 31px; height: 31px; color: var(--ink); background: var(--lime); font: 800 13px monospace; }
+    .nav-links { display: flex; align-items: center; gap: 32px; color: var(--muted); font-size: 12px; }
+    .nav-links a:hover { color: var(--lime); }
+    .nav-cta { font-size: 11px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+    .menu-toggle { display: none; border: 0; color: var(--text); background: none; font-size: 25px; cursor: pointer; }
+
+    .hero { position: relative; min-height: 800px; padding: 200px 0 100px; overflow: hidden; background: radial-gradient(circle at 80% 20%, #1c3530 0, transparent 34%), var(--ink); }
+    .hero:before { position: absolute; inset: 0; opacity: .17; background-image: linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px); background-size: 72px 72px; content: ''; mask-image: linear-gradient(to bottom, #000, transparent 90%); }
+    .hero-grid { position: relative; display: grid; grid-template-columns: minmax(0, 1.03fr) minmax(360px, .97fr); gap: 70px; align-items: center; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { max-width: 720px; margin-bottom: 27px; font-size: clamp(47px, 6.6vw, 86px); line-height: .99; letter-spacing: -.065em; }
+    h1 em { color: var(--lime); font-style: normal; }
+    .hero-copy { max-width: 500px; color: var(--muted); font-size: 16px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 36px; }
+    .hero-note { display: flex; align-items: center; gap: 10px; margin-top: 53px; color: var(--muted); font: 11px monospace; }
+    .pulse { width: 7px; height: 7px; border-radius: 50%; background: var(--lime); box-shadow: 0 0 0 5px rgba(199,243,107,.12); }
+    .orbit-wrap { position: relative; min-height: 460px; }
+    .orbit { position: absolute; top: 50%; left: 50%; width: 405px; height: 405px; border: 1px solid rgba(199,243,107,.3); border-radius: 50%; transform: translate(-50%, -50%) rotate(-25deg); }
+    .orbit:before, .orbit:after { position: absolute; border: 1px solid rgba(199,243,107,.12); border-radius: 50%; content: ''; }
+    .orbit:before { inset: 49px; } .orbit:after { inset: 107px; }
+    .orbit-core { position: absolute; top: 50%; left: 50%; display: grid; place-items: center; width: 140px; height: 140px; color: var(--ink); background: var(--lime); transform: translate(-50%, -50%); box-shadow: 0 0 70px rgba(199,243,107,.24); }
+    .orbit-core strong { font-size: 42px; letter-spacing: -.1em; line-height: 1; }
+    .orbit-core small { margin-top: -32px; font: 10px monospace; text-transform: uppercase; }
+    .orbit-dot { position: absolute; width: 14px; height: 14px; border: 3px solid var(--ink); border-radius: 50%; background: var(--orange); }
+    .dot-one { top: 29px; left: 75px; } .dot-two { right: 14px; bottom: 91px; background: var(--lime); } .dot-three { bottom: 24px; left: 146px; background: var(--text); }
+    .code-card { position: absolute; right: -7px; bottom: 6px; width: 208px; padding: 15px; border: 1px solid var(--line); background: rgba(17,23,30,.88); box-shadow: 14px 14px 0 rgba(199,243,107,.08); font: 11px/1.8 monospace; }
+    .code-card .pink { color: var(--orange); } .code-card .green { color: var(--lime); } .code-card .gray { color: #77838c; }
+
+    .ticker { display: flex; overflow: hidden; border-block: 1px solid var(--line); color: var(--muted); white-space: nowrap; background: var(--surface); }
+    .ticker-track { display: flex; gap: 42px; padding: 16px 0; animation: marquee 24s linear infinite; font: 11px monospace; letter-spacing: .14em; text-transform: uppercase; }
+    .ticker b { color: var(--lime); font-weight: 400; }
+    @keyframes marquee { to { transform: translateX(-50%); } }
+
+    section { padding: 120px 0; }
+    .section-head { display: flex; justify-content: space-between; align-items: end; gap: 35px; margin-bottom: 54px; }
+    .section-head h2 { max-width: 530px; margin: 12px 0 0; font-size: clamp(33px, 4.5vw, 55px); line-height: 1.04; letter-spacing: -.06em; }
+    .section-head p { max-width: 330px; margin-bottom: 4px; color: var(--muted); font-size: 13px; }
+    .intro { background: var(--surface); }
+    .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; margin-top: 70px; border: 1px solid var(--line); background: var(--line); }
+    .stat { min-height: 130px; padding: 26px; background: var(--surface); }
+    .stat strong { display: block; margin-bottom: 5px; color: var(--lime); font-size: 35px; letter-spacing: -.07em; }
+    .stat span { color: var(--muted); font: 11px monospace; }
+    .services { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .service { position: relative; min-height: 292px; padding: 27px; border: 1px solid var(--line); background: var(--ink); transition: border-color .2s, transform .2s; }
+    .service:hover { border-color: var(--lime); transform: translateY(-6px); }
+    .service-no { color: var(--lime); font: 12px monospace; }
+    .service h3 { margin: 70px 0 11px; font-size: 23px; letter-spacing: -.04em; }
+    .service p { margin: 0; color: var(--muted); font-size: 13px; }
+    .service-arrow { position: absolute; right: 26px; bottom: 25px; color: var(--lime); font-size: 25px; }
+
+    .process { background: #dce4d8; color: var(--ink); }
+    .process .eyebrow { color: #3b6939; }
+    .process-list { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid rgba(11,15,20,.22); }
+    .step { min-height: 240px; padding: 22px 20px 0 0; border-right: 1px solid rgba(11,15,20,.22); }
+    .step:not(:first-child) { padding-left: 20px; } .step:last-child { border-right: 0; }
+    .step-num { font: 12px monospace; } .step h3 { margin: 48px 0 10px; font-size: 19px; letter-spacing: -.04em; } .step p { margin: 0; color: #546057; font-size: 13px; }
+
+    .work-grid { display: grid; grid-template-columns: 1.2fr .8fr; gap: 15px; }
+    .project { position: relative; display: flex; flex-direction: column; justify-content: space-between; min-height: 440px; padding: 25px; overflow: hidden; }
+    .project:first-child { background: #e0e9da; color: var(--ink); } .project:last-child { background: #292d3d; }
+    .project-label { position: relative; z-index: 1; display: flex; justify-content: space-between; font: 11px monospace; text-transform: uppercase; }
+    .project h3 { position: relative; z-index: 1; max-width: 400px; margin: 0; font-size: clamp(29px, 4vw, 50px); line-height: 1; letter-spacing: -.07em; }
+    .project:last-child h3 { max-width: 250px; }
+    .project-art { position: absolute; width: 275px; height: 275px; border: 1px solid rgba(11,15,20,.23); border-radius: 50%; top: 53%; left: 64%; transform: translate(-50%, -50%); }
+    .project-art:before, .project-art:after { position: absolute; border-radius: 50%; content: ''; } .project-art:before { inset: 40px; background: var(--orange); } .project-art:after { inset: 88px; background: var(--ink); }
+    .project:last-child .project-art { left: 70%; border-color: rgba(241,244,239,.2); } .project:last-child .project-art:before { background: var(--lime); } .project:last-child .project-art:after { background: #292d3d; }
+
+    .contact { padding-bottom: 100px; background: var(--lime); color: var(--ink); }
+    .contact-inner { display: flex; justify-content: space-between; align-items: end; gap: 50px; }
+    .contact .eyebrow { color: #3b6939; } .contact h2 { max-width: 630px; margin: 14px 0 0; font-size: clamp(43px, 7vw, 82px); line-height: .95; letter-spacing: -.08em; } .contact .button { border-color: var(--ink); background: var(--ink); color: var(--text); } .contact .button:hover { background: #28342c; }
+    footer { padding: 30px 0; color: var(--muted); background: var(--ink); font-size: 11px; } .footer-inner { display: flex; justify-content: space-between; align-items: center; gap: 20px; } .footer-links { display: flex; gap: 23px; } .footer-links a:hover { color: var(--lime); }
+
+    @media (max-width: 760px) {
+      .container { width: min(calc(100% - 34px), var(--max)); }
+      .nav { height: 72px; } .nav-links { position: absolute; top: 72px; right: 17px; left: 17px; display: none; flex-direction: column; align-items: stretch; gap: 0; padding: 8px; border: 1px solid var(--line); background: var(--surface); } .nav-links.open { display: flex; } .nav-links a { padding: 13px; } .nav-cta { display: none; } .menu-toggle { display: block; }
+      .hero { min-height: auto; padding: 145px 0 70px; } .hero-grid { display: block; } .hero-note { margin-top: 34px; } .orbit-wrap { min-height: 350px; margin-top: 35px; } .orbit { width: 300px; height: 300px; } .orbit-core { width: 105px; height: 105px; } .orbit-core strong { font-size: 31px; } .code-card { right: 0; bottom: 0; width: 175px; font-size: 9px; }
+      section { padding: 78px 0; } .section-head { display: block; margin-bottom: 34px; } .section-head p { margin-top: 22px; } .stats, .services, .process-list { grid-template-columns: 1fr 1fr; } .stat { min-height: 110px; padding: 20px; } .stat strong { font-size: 29px; }
+      .service { min-height: 250px; padding: 21px; } .service h3 { margin-top: 46px; font-size: 19px; } .process-list { border-bottom: 1px solid rgba(11,15,20,.22); } .step, .step:not(:first-child) { min-height: 210px; padding: 19px 15px 0 0; border-right: 0; border-bottom: 1px solid rgba(11,15,20,.22); } .step:nth-child(odd) { padding-right: 15px; } .step:nth-child(even) { padding-left: 15px; border-left: 1px solid rgba(11,15,20,.22); } .step h3 { margin-top: 32px; font-size: 17px; }
+      .work-grid { grid-template-columns: 1fr; } .project { min-height: 330px; } .contact-inner { display: block; } .contact .button { margin-top: 35px; } .footer-inner { display: block; } .footer-links { margin-top: 13px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="nav container" aria-label="Navigasi utama">
+      <a href="#top" class="brand"><span class="brand-mark">CA</span> CAHAYA ASIA BERSAMA</a>
+      <div class="nav-links" id="navLinks"><a href="#tentang">Tentang</a><a href="#layanan">Layanan</a><a href="#karya">Karya</a><a href="#kontak">Kontak</a></div>
+      <a class="nav-cta" href="#kontak">Mulai proyek <span>↗</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Buka menu">+</button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-grid container">
+        <div>
+          <div class="eyebrow">Digital product studio / 2024</div>
+          <h1>Build the <em>next</em><br>chapter.</h1>
+          <p class="hero-copy">CV Cahaya Asia Bersama membantu bisnis bertumbuh melalui website dan aplikasi mobile yang cepat, relevan, dan dibuat untuk dipakai manusia.</p>
+          <div class="hero-actions"><a class="button" href="#kontak">Diskusikan ide <span>↗</span></a><a class="button ghost" href="#layanan">Lihat layanan</a></div>
+          <div class="hero-note"><span class="pulse"></span> Available for selected projects</div>
+        </div>
+        <div class="orbit-wrap" aria-hidden="true"><div class="orbit"><span class="orbit-dot dot-one"></span><span class="orbit-dot dot-two"></span><span class="orbit-dot dot-three"></span><div class="orbit-core"><strong>CA</strong><small>digital craft</small></div></div><div class="code-card"><span class="gray">// your idea, shipped</span><br><span class="pink">const</span> future = <span class="green">build</span>(<br>&nbsp;&nbsp;clarity,<br>&nbsp;&nbsp;technology<br>);</div></div>
+      </div>
+    </section>
+
+    <div class="ticker"><div class="ticker-track"><span>Strategy <b>+</b></span><span>Design <b>+</b></span><span>Technology <b>+</b></span><span>Partnership <b>+</b></span><span>Strategy <b>+</b></span><span>Design <b>+</b></span><span>Technology <b>+</b></span><span>Partnership <b>+</b></span></div></div>
+
+    <section class="intro" id="tentang"><div class="container"><div class="section-head"><div><div class="eyebrow">01 / who we are</div><h2>Teknologi yang terasa dekat.</h2></div><p>Kami bukan sekadar vendor. Kami adalah partner berpikir yang menerjemahkan tujuan bisnis menjadi pengalaman digital yang bernilai.</p></div><div class="stats"><div class="stat"><strong>12+</strong><span>Produk digital dibuat</span></div><div class="stat"><strong>4 th</strong><span>Belajar dan bertumbuh</span></div><div class="stat"><strong>100%</strong><span>Komitmen kolaborasi</span></div><div class="stat"><strong>24/7</strong><span>Ide tetap bergerak</span></div></div></div></section>
+
+    <section id="layanan"><div class="container"><div class="section-head"><div><div class="eyebrow">02 / capabilities</div><h2>Dari ide menjadi impact.</h2></div><p>Solusi digital yang solid dari fondasi sampai peluncuran, dengan ruang untuk tumbuh.</p></div><div class="services"><article class="service"><div class="service-no">01 — WEB</div><h3>Website &amp; Web App</h3><p>Platform digital yang cepat, mudah digunakan, dan siap mengubah pengunjung menjadi pelanggan.</p><span class="service-arrow">↗</span></article><article class="service"><div class="service-no">02 — MOBILE</div><h3>Mobile Experience</h3><p>Aplikasi mobile yang intuitif untuk membuat produk Anda selalu ada di genggaman pengguna.</p><span class="service-arrow">↗</span></article><article class="service"><div class="service-no">03 — GROWTH</div><h3>Digital Growth</h3><p>Strategi, optimasi, dan insight agar investasi teknologi Anda menghasilkan lebih banyak.</p><span class="service-arrow">↗</span></article></div></div></section>
+
+    <section class="process"><div class="container"><div class="section-head"><div><div class="eyebrow">03 / our process</div><h2>Jelas sejak langkah pertama.</h2></div><p>Proses yang transparan membuat kolaborasi terasa ringan dan hasilnya terarah.</p></div><div class="process-list"><article class="step"><span class="step-num">01 / Discover</span><h3>Memahami konteks</h3><p>Kami mulai dari masalah yang nyata, bukan asumsi.</p></article><article class="step"><span class="step-num">02 / Define</span><h3>Menemukan arah</h3><p>Ide disusun menjadi prioritas dan rencana yang terukur.</p></article><article class="step"><span class="step-num">03 / Build</span><h3>Membuat nyata</h3><p>Desain dan teknologi dirakit dengan perhatian pada detail.</p></article><article class="step"><span class="step-num">04 / Grow</span><h3>Terus bertumbuh</h3><p>Produk diluncurkan, dipelajari, lalu dibuat lebih baik.</p></article></div></div></section>
+
+    <section id="karya"><div class="container"><div class="section-head"><div><div class="eyebrow">04 / selected work</div><h2>Beberapa hal yang kami bangun.</h2></div><p>Setiap proyek dimulai dari cerita yang berbeda. Ini sebagian kecil dari perjalanan kami.</p></div><div class="work-grid"><article class="project"><div class="project-label"><span>Case study / 01</span><span>Fintech</span></div><div class="project-art"></div><h3>Making money feel simple.</h3></article><article class="project"><div class="project-label"><span>Case study / 02</span><span>Retail</span></div><div class="project-art"></div><h3>A better way to move.</h3></article></div></div></section>
+
+    <section class="contact" id="kontak"><div class="container contact-inner"><div><div class="eyebrow">05 / let’s talk</div><h2>Punya ide?<br>Mari nyalakan.</h2></div><a class="button" href="mailto:hello@cahayaasiabersama.id">hello@cahayaasiabersama.id <span>↗</span></a></div></section>
+  </main>
+  <footer><div class="container footer-inner"><span>© 2024 CV Cahaya Asia Bersama. Built with purpose.</span><div class="footer-links"><a href="#tentang">Instagram</a><a href="#kontak">LinkedIn</a><a href="#top">Back to top ↑</a></div></div></footer>
+  <script>
+    const toggle = document.getElementById('menuToggle');
+    const links = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+    links.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => links.classList.remove('open')));
+  </script>
+</body>
+</html>
